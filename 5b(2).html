@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Program</title>
+</head>
+<body>
+	<section>
+		<header>
+			<h2> <center><strong>Write a code in any programming language that counts the digits in a number.</strong></center></h2>
+		</header>
+		<article>
+			<h2>Sample Input:</h2>
+			<code><small>-12344</small></code>
+			<br>
+			<s>Negative numbers NOt Allowed</s>
+			<br>
+			<code><em><strong>123456789</strong></em></code>
+		</article>
+		<article>
+			<h2>Sample Output:</h2>
+			<samp><strong>9</strong></samp>
+			<aside>
+				<h3><em>Variables Declared:</em></h3>
+				<var>N<sub>input</sub></var>
+			</aside>
+		</article>
+		<hr>
+		<hr>
+		<code>
+			<p style="margin-left:190px">CODE:</p>
+			<pre>
+				#include <bits/stdc++.h> 	
+				using namespace std; 
+				// To count the no. of digits in a number 
+				void count_digits(int <var>N<sub>input</sub></var>) 
+				{ 
+					// converting number to string using 
+					// to_string in C++ 
+					string num = to_string(<var>N<sub>input</sub></var>); 
+
+					// calculate the size of string 
+					cout << num.size() << endl; 
+				} 
+				// driver function 
+				int main() 
+				{ 
+					// number 
+					int <var>N<sub>input</sub></var>= 345; 
+					count_digits(<var>N<sub>input</sub></var>); 
+					return 0; 
+				}      		
+			</pre>
+		</code>
+		<article>
+			Press <kbd>Enter</kbd> to see the output
+			<br>
+			<h3>OUTPUT:</h3>
+			<br>
+			9
+			<p>Message from the computer: <samp>code excecuted successfully</samp></p>
+		</article>
+		<footer>
+			<h5><strong><em>Complexity:</em></strong></h5>
+			O(N<sup>2</sup>)
+			<h4>Reference:<a href="https://www.geeksforgeeks.org/program-count-digits-integer-3-different-methods/">MoreInfo</a></h4>
+		</footer>
+	</section>
+</body>
+</html>
